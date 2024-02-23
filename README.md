@@ -20,11 +20,11 @@ What things you need to install the software and how to install them:
 
 A step-by-step series of examples that tell you how to get a development environment running:
 
-1. Clone the repository:
+1. Clone the frontend and backend repository:
 
     ```bash
-    git clone https://github.com/yourusername/frontida.git
-    cd frontida
+    git clone https://github.com/Mama-Frontida/FRONTIDA_FRONTEND.git frontend
+    git clone https://github.com/Mama-Frontida/APIs.git backend
     ```
 
 2. Set up the backend:
@@ -75,6 +75,8 @@ For quick use and testing, visit the live platform on [https://frontida.vercel.a
 
 We welcome contributions to Frontida! If you have suggestions for improving the application or have found a bug, please open an issue or submit a pull request.
 
+    cd frontida_frontend
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details.
@@ -84,8 +86,8 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 Hat tip to anyone whose code was used.
 Inspiration, etc.
 
-## Team
+### Team
 
-Maria Muthiore
-Danroy Ndung'u
-Mwangi Nelson
+- **Danroy Mwangi** - Team Lead and NLP Lead
+- **Maria Muthiore** - Backend Lead
+- **Nelson Kamau** - Frontend Lead
