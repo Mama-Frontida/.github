@@ -2,92 +2,95 @@
 
 ## Introduction
 
-Frontida is an innovative chatbot designed to support new mothers experiencing postpartum depression (PPD). Utilizing advanced natural language processing and video recommendation technologies, Frontida offers real-time, empathetic support and resources to help mitigate the effects of PPD. This project aligns with UN Sustainable Development Goals, specifically targeting Good Health & Well-being, Gender Equality, and Industry, Innovation, & Infrastructure.
+Frontida is a cutting-edge chatbot initiative designed to empower new mothers navigating the complexities of postpartum depression (PPD). By leveraging sophisticated natural language processing and tailored video recommendation technologies, Frontida delivers empathetic, real-time support and resources aimed at alleviating the impacts of PPD. This project contributes to the UN Sustainable Development Goals, emphasizing Good Health & Well-being, Gender Equality, and Industry, Innovation, & Infrastructure.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+Follow these instructions to set up the Frontida project on your local machine for development and testing purposes.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them:
+Ensure you have the following prerequisites installed:
 - Node.js
-- Python 3.8+
-- Firebase account
-- Access to Hugging Face and Render.com for deployment
+- Python 3.8 or higher
+- A Firebase account
+- Access to Hugging Face and Render.com for deployment purposes
 
-### Installing
+### Installation Guide
 
-A step-by-step series of examples that tell you how to get a development environment running:
+#### Clone the Repositories
 
-1. Clone the frontend and backend repository:
+```bash
+git clone https://github.com/Mama-Frontida/FRONTIDA_FRONTEND.git frontend
+git clone https://github.com/Mama-Frontida/APIs.git backend
+```
 
-    ```bash
-    git clone https://github.com/Mama-Frontida/FRONTIDA_FRONTEND.git frontend
-    git clone https://github.com/Mama-Frontida/APIs.git backend
-    ```
+#### Backend and YouTube Microservices Setup
 
-2. Set up the backend:
+```bash
+cd backend
+pip install -r requirements.txt
+python app.py  # Runs the Flask server
+```
 
-    ```bash
-    # Navigate to the backend directory
-    cd backend
+#### Frontend Setup
 
-    # Install dependencies
-    pip install -r requirements.txt
+```bash
+cd frontend  # Assuming you're in the root directory
+npm install   # Install dependencies
+npm run dev   # Start the development server
+```
 
-    # Run the Flask server
-    python app.py
-    ```
+#### T5-Small Model Setup
 
-3. Set up the frontend:
+To get started with the T5-Small model:
 
-    ```bash
-    # Navigate to the frontend directory from the root directory
-    cd frontend
+```bash
+git clone https://github.com/Mama-Frontida/text-generation-models.git model-repo
+cd model-repo  # Navigate to the model repository
+# Follow the Jupyter Notebook instructions within the repo
+```
 
-    # Install dependencies
-    npm install
+For cloning the production repository from our Hugging Face account:
 
-    # Start the development server
-    npm run dev
-    ```
+```bash
+git clone https://huggingface.co/Danroy/MamaFrontida
+```
+
+Ensure you follow the notebook instructions for running the model and generating text. Install any necessary dependencies as specified within the notebook or the repository's documentation.
 
 ### Firebase and Other Services Setup
 
-Ensure you set up your Firebase project and update the firebase.jsx file in the frontend directory with your Firebase account keys.
+Set up your Firebase project and ensure the `firebase.jsx` file in the frontend directory is updated with your Firebase configuration keys.
 
 ## Technology Stack
 
-- Frontend: React (Javascript)
-- Backend: Python, Flask
-- AI Model: T5-small model fine-tuned for PPD support
-- Database & Authentication: Firebase
-- Deployment: Vercel (Frontend), Render.com (Backend APIs), Hugging Face (Model)
+- **Frontend:** React (JavaScript)
+- **Backend:** Python, Flask
+- **AI Model:** T5-small model, fine-tuned for PPD support
+- **Database & Authentication:** Firebase
+- **Deployment:** Vercel (Frontend), Render.com (Backend APIs), Hugging Face (Model)
 
 ## How to Use
 
-After starting both frontend and backend servers, navigate to http://localhost:5173 to view the Frontida web application. Users can interact with the chatbot immediately, receiving support and video recommendations based on their queries.
+After initiating the frontend and backend servers, open http://localhost:5173 to access the Frontida web application. Users can engage with the chatbot for support and video recommendations tailored to their needs.
 
-For quick use and testing, visit the live platform on [https://frontida.vercel.app](https://frontida.vercel.app).
+For immediate access, visit our live platform at [https://frontida.vercel.app](https://frontida.vercel.app).
 
 ## Contributing
 
-We welcome contributions to Frontida! If you have suggestions for improving the application or have found a bug, please open an issue or submit a pull request.
-
-    cd frontida_frontend
+Your contributions to Frontida are highly appreciated. Whether you're improving the application or reporting bugs, please feel free to open an issue or submit a pull request.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+Frontida is made available under the MIT License. For more details, see the [LICENSE.md](LICENSE) file.
 
 ## Acknowledgments
 
-Hat tip to anyone whose code was used.
-Inspiration, etc.
+We extend our gratitude to all individuals and organizations whose contributions have made Frontida a reality. Special thanks to our dedicated team members for their relentless effort and innovation:
 
-### Team
+- **Danroy Mwangi** - Team Lead & NLP Expert
+- **Maria Muthiore** - Backend Development Lead
+- **Nelson Kamau** - Frontend Development Lead
 
-- **Danroy Mwangi** - Team Lead and NLP Lead
-- **Maria Muthiore** - Backend Lead
-- **Nelson Kamau** - Frontend Lead
+Together, we continue to strive towards making a significant impact on the well-being of new mothers worldwide.
