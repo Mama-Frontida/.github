@@ -27,7 +27,7 @@ A step-by-step series of examples that tell you how to get a development environ
     git clone https://github.com/Mama-Frontida/APIs.git backend
     ```
 
-2. Set up the backend:
+2. Set up the backend and Youtube Microservices:
 
     ```bash
     # Navigate to the backend directory
@@ -52,6 +52,43 @@ A step-by-step series of examples that tell you how to get a development environ
     # Start the development server
     npm run dev
     ```
+4. Frontida's T5-Small Model Guide
+
+Welcome to the guide on accessing and running Frontida's T5-Small model, designed to support new mothers. This model aids in text generation for various purposes related to maternal health and parenting. Below are the steps to get started with the model through a Jupyter Notebook available in the GitHub repository of Frontida's text generation models.
+
+  Cloning the Model Repository
+
+To begin, clone the repository containing the Jupyter Notebook for the T5-Small model. Follow these steps:
+
+```bash
+git clone https://github.com/Mama-Frontida/text-generation-models.git model-repo
+```
+
+ Accessing the Notebook
+
+Once the repository is cloned, navigate to the directory:
+
+```bash
+cd model-repo
+```
+
+ Running the Notebook
+
+Once you have accessed the cloned repository, locate the Jupyter Notebook specific to the T5-Small model. Open the notebook using Jupyter Notebook or JupyterLab environment and follow the instructions provided within the notebook to run the model and generate text.
+
+ Additional Notes
+
+Make sure to have the necessary dependencies installed as per the requirements specified in the repository's README or within the notebook itself. You may need to install specific Python libraries or pretrained model weights to successfully run the model.
+If you wish to clone the production repository from our huggingface account, here is the link
+
+```bash
+git clone https://huggingface.co/Danroy/MamaFrontida
+```
+
+
+For any questions or issues regarding the model or its usage, please refer to the documentation provided within the repository or contact the Frontida team for assistance.
+
+Happy text generation! 🚀
 
 ### Firebase and Other Services Setup
 
